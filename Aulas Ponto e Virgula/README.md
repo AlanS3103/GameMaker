@@ -1,5 +1,9 @@
-Arquivo disponibilizado pelo Gabriel, Criador de Conteúdo dono do canal no Youtube, Ponto e Vírgula e Streamer na Twitch como, AqueleDev.
+Este é um arquivo disponibilizado por Gabriel, criador de conteúdo e proprietário do canal no YouTube "Ponto e Vírgula", além de ser um streamer na Twitch com o nome "AqueleDev".
 
-O arquivo foi trabalhado em Lives na plataforma da Twitch como aulas sobre algumas Mecânicas de jogos e sobre a Game Engine utilizada que foi o GameMakerStudio 2, após o final da lives ele foi disponibilizando os arquivos em  seu servidor do Discord: discord.gg/bmwNkhAZS7
+O arquivo foi elaborado durante transmissões ao vivo na plataforma Twitch, onde foram ministradas aulas sobre diversas mecânicas de jogos e sobre a Game Engine utilizada, que foi o GameMaker Studio 2. Após o término das transmissões ao vivo, Gabriel disponibilizou os arquivos em seu servidor do Discord, que será listado abaixo juntamente com suas outras rede.
 
-Esta pasta possui até o último aquivo liberado, que foi da aula 4 (arquivos da aula 5 ainda não foram liberados, por conta de bugs no código, o Gabriel irá corrigir antes de liberar eles). Nela você pode encontrar os zip's de cada aula, caso queira comparar e ver as diferenças.
+Esta pasta contém todos os arquivos liberados até o momento, sendo o último proveniente da aula 4. Os arquivos da aula 5 ainda não foram liberados devido a bugs no código, os quais Gabriel planeja corrigir antes de disponibilizá-los. Caso deseje, é possível encontrar os arquivos compactados de cada aula nesta pasta para fins de comparação e análise das diferenças.
+
+Link para o servidor Ponto e Vírgula no Discord: https://discord.com/invite/bmwNkhAZS7 <br>
+Link da Twitch: https://www.youtube.com/channel/UCWadBjpCbsty1PzXDcFZhNw <br>
+Link do Youtube: https://www.twitch.tv/aqueledev <br>
