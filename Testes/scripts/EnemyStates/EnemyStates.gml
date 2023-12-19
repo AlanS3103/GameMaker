@@ -21,10 +21,10 @@ function scr_enemy_patrol(){
 		destino_y = irandom_range(200, 500);
 	}
 	
-	show_debug_message("Dist: " + string(dist) + " DX: " + string(destino_x) + " DY: " + string(destino_y));
+	//show_debug_message("Dist: " + string(dist) + " DX: " + string(destino_x) + " DY: " + string(destino_y));
 	
 	dir = point_direction(x, y, destino_x, destino_y);
-	show_debug_message(dir);
+	
 	
 	hspd = lengthdir_x(spd, dir);
 	vspd = lengthdir_y(spd, dir);
@@ -32,7 +32,7 @@ function scr_enemy_patrol(){
 	x += hspd;
 	y += vspd;
 	
-	espera = 0;
+	//espera = 0;
 	
 	image_angle = dir;
 }
@@ -45,9 +45,12 @@ function scr_enemy_patrol(){
 function scr_enemy_moving_path(){
 	dir = point_direction(x, y, obj_player.x, obj_player.y);
 	
-	if mp_grid_path(obj_pathfinding.path_grid, path, x, y, obj_player.x, obj_player.y, true){
+	if mp_grid_path(obj_pathfinding.path_grid, path, x, y, destino_x, destino_y, true){
 		path_start(path, spd, path_action_stop, false);
 		
+		
+		image_angle = dir
+		/*
 		switch floor(dir/90){
 			default:
 				sprite_index = spr_inimigo_right;
@@ -61,8 +64,10 @@ function scr_enemy_moving_path(){
 			case 3:
 				sprite_index = spr_inimigo_down;
 			break;
-		}
-	
+		}*/
+		
+	}else{
+		path_end();
 	}
 }
 

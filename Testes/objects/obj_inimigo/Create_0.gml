@@ -7,7 +7,7 @@ hspd = -1;
 vspd = -1;
 dir = -1;
 
-opcao = [0, 1, 2];
+opcao = 0;
 
 spd = random_range(1.5, 2);
 

@@ -14,12 +14,20 @@ down	= keyboard_check(ord("S")) or keyboard_check(vk_down);
 
 #endregion
 
+#region Visto pelo inimigo
 if position_meeting(x, y, obj_flashlight_area){
 	obj_inimigo.visto = true
 }else{
 	obj_inimigo.visto = false
 }
 
+#endregion
+
+if vida == 0{
+	game_end();
+}
+
+show_debug_message(vida);
 
 #region Movimentação
 

@@ -12,5 +12,7 @@ down	= -1;
 
 dir		= -1;
 
+vida = 3;
+
 
 state = scr_player_moving;

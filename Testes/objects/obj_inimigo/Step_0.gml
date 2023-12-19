@@ -1,24 +1,39 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-espera += 1;
+espera += 1 * room_speed;
 cd_attack--;
+
+
+if visto == true {
+	destino_x = obj_player.x;
+	destino_y = obj_player.y;
+	
+	opcao = 1;
+} else if path_get_number(path) <= 2{
+	path_end();
+	opcao = choose(0,2);
+}
 
 //Movientação
 
 switch opcao{
-	default:
+	case 0:
 		hspd = 0;
 		vspd = 0;
 		
 		x += hspd;
 		y += vspd;
 		
+		opcao = choose(0,2);
+		
 	break;
 	case 1:
 		script_execute(scr_enemy_moving_path);
+		
 	break;
 	case 2:
 		script_execute(scr_enemy_patrol);
+		opcao = choose(0,2);
 	break;
 /*	case...:
 		ssss

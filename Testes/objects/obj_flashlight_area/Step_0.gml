@@ -4,7 +4,7 @@
 x = guard.x;
 y = guard.y;
 
-image_angle = guard.image_angle;
+image_angle = obj_inimigo.image_angle;
 
 dir = obj_inimigo.dir;
 

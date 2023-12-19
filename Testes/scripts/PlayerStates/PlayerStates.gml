@@ -9,11 +9,13 @@ function scr_player_moving(){
 		
 		hspd = lengthdir_x(spd, dir)
 		vspd = lengthdir_y(spd, dir)
+		
+		
 	}else{
 		hspd = 0;
 		vspd = 0;
 	}
-	
+	/*
 	switch floor(dir/90){
 		default:
 			sprite_index = spr_player_right;
@@ -27,7 +29,7 @@ function scr_player_moving(){
 		case 3:
 			sprite_index = spr_player_down;
 		break;
-	}
+	}*/
 	
 	if place_meeting(x + hspd, y, obj_parede){
 		hspd = 0;
@@ -38,7 +40,12 @@ function scr_player_moving(){
 	
 	x += hspd;
 	y += vspd;
-	
+	image_angle = dir;
+	if hspd != 0 or vspd != 0{
+		sprite_index = spr_player_moving;
+	} else {
+		sprite_index = spr_player_iddle;
+	}
 	
 	
 }
