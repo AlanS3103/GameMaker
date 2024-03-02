@@ -1,6 +1,6 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
-espera += 1 * room_speed;
+
 cd_attack--;
 
 
@@ -9,31 +9,38 @@ if visto == true {
 	destino_y = obj_player.y;
 	
 	opcao = 1;
-} else if path_get_number(path) <= 2{
-	path_end();
-	opcao = choose(0,2);
 }
 
 //Movientação
-
 switch opcao{
 	case 0:
+		sprite_index = spr_inimigo_iddle;
+		
 		hspd = 0;
 		vspd = 0;
 		
 		x += hspd;
 		y += vspd;
 		
-		opcao = choose(0,2);
+		
+		
+		if time == 0 {
+			opcao = choose(0,2);
+			time = room_speed * 2;
+			
+		}
+		time -= 1;
+		
 		
 	break;
 	case 1:
-		script_execute(scr_enemy_moving_path);
+		script_execute(scr_enemy_chasing_path);
+		sprite_index = spr_inimigo_shooting;
 		
 	break;
 	case 2:
-		script_execute(scr_enemy_patrol);
-		opcao = choose(0,2);
+		script_execute(scr_enemy_patrol_path);
+		sprite_index = spr_inimigo_moving;
 	break;
 /*	case...:
 		ssss
@@ -45,16 +52,16 @@ switch opcao{
 
 //Ataque
 
-if cd_attack <= 0{
-	script_execute(scr_enemy_shoot)
+if cd_attack <= 0 and visto == true{
+	script_execute(single_shoot);
 	
 	cd_attack = 180;
 }
 
 //atacar quando o player estive perto
 
-xx = (obj_inimigo.x - obj_player.x)
-yy = (obj_inimigo.y - obj_player.y) 
+//xx = (obj_inimigo.x - obj_player.x)
+//yy = (obj_inimigo.y - obj_player.y) 
 
 /*
 area_visao = 100;

@@ -15,21 +15,6 @@ function scr_player_moving(){
 		hspd = 0;
 		vspd = 0;
 	}
-	/*
-	switch floor(dir/90){
-		default:
-			sprite_index = spr_player_right;
-		break;
-		case 1:
-			sprite_index = spr_player_up;
-		break;
-		case 2:
-			sprite_index = spr_player_left;
-		break;
-		case 3:
-			sprite_index = spr_player_down;
-		break;
-	}*/
 	
 	if place_meeting(x + hspd, y, obj_parede){
 		hspd = 0;

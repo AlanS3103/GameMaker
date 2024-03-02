@@ -1,10 +1,11 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-if (follow != noone){
+if (follow != noone) {
 	xTo = follow.x;
 	yTo = follow.y;
 }
+
 
 x += (xTo - x)/25;
 y += (yTo - y)/25;

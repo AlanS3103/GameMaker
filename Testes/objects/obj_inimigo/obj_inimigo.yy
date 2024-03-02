@@ -33,8 +33,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_inimigo_right",
-    "path": "sprites/spr_inimigo_right/spr_inimigo_right.yy",
+    "name": "spr_inimigo_iddle",
+    "path": "sprites/spr_inimigo_iddle/spr_inimigo_iddle.yy",
   },
   "spriteMaskId": null,
   "visible": true,
