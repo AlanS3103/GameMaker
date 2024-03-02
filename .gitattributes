@@ -1,6 +1,7 @@
 # Ignore .yy files for language statistics 
-#*.yy linguist-generated=true
+*.yy linguist-generated=true
 
-# Ignore .yy files for language statistics 
-#*.yy linguist-generated=true
+# Ignore .fsh and .vsh files (shaders files) for language statistics 
+*.fsh linguist-generated=true
+*.vsh linguist-generated=true
 
